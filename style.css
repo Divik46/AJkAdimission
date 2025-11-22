@@ -32,6 +32,108 @@ body {
 }
 
 
+
+
+ .bannerslider .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    .bannerslider .content h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .bannerslider .content p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .btn-box {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* BUTTON STYLE */
+    .blue-btn {
+        background: #2b348b;
+        color: #fff;
+        padding: 12px 28px;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .blue-btn:hover {
+        background: #1d2361;
+    }
+
+
+/* banner */
+@media(max-width: 768px){
+
+    .bannerslider .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+        padding: 20px;
+    }
+
+    .bannerslider .content{
+        width: 100%;
+    }
+
+    .bannerslider h2{
+        font-size: 26px !important;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .bannerslider p{
+        font-size: 14px !important;
+        line-height: 22px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .btn-box{
+        display: flex;
+        justify-content: center !important;
+        margin-top: 20px;
+    }
+
+    .blue-btn{
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+      .bannerslider h2 br {
+        display: none; /* Remove line break only on mobile */
+    }
+
+    .bannerslider h2 {
+        font-size: 26px !important;
+        line-height: 34px;
+        white-space: normal !important;
+        text-align: center;
+    }
+}
+
+
+
 /* Header */
 .header {
     background: linear-gradient(233deg, #343c8f 75%, #ffff 75%);
@@ -1596,7 +1698,7 @@ section {
     }
 
     .why-text h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #343c8f;
       line-height: 1.3;
